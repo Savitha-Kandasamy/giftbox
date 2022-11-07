@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function giftgen(){
+    var n = document.getElementById("num").value;
+    for(let i=1;i<=n;i++){
+        const parent1=document.getElementById("output");
+        const myImage = new Image(100, 200);
+        myImage.src = "https://www.thedottedi.in/pub/media/catalog/product/cache/c9e0b0ef589f3508e5ba515cde53c5ff/s/q/square_jute_box.jpg";
+        // myImage.setAttribute("class","gift");
+        parent1.appendChild(myImage);
+
+        }
+}
+    </script>
+    <style>
+        .back{
+            background-image: url("https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=360");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cen{
+            margin-top: 50px;
+            margin-left: 50px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80px;
+            color: rgb(45, 45, 43);
+        }
+        .but{
+            margin-top: 100px;
+            margin-left: 550px;
+            width: 450px;
+            height: 70px;
+            text-align: center;
+            font-size: large;
+            background-color: rgb(211, 237, 244);
+            color:brown;
+        }
+        .asd{
+            background-color: rgb(202, 199, 169);
+        }
+        .butu{
+            margin-top: 50px;
+            margin-left: 650px;
+            width: 250px;
+            height: 70px;
+            text-align: center;
+            font-size: large;
+            background-color: rgb(227, 239, 237);
+            color:rgb(43, 39, 39);
+        }
+        .spa img{
+         /* justify-content: space-between; */
+            margin: 3%;
+            width: 150px;
+        }
+    </style>
+</head>
+<body class="back">
+    <p class="cen">WHIP-UP GIFT BOXES</p>
+    <input type="number" id="num" class="but" placeholder="ENTER THE NUMBER OF GIFTS TO GENERATE" name="number" required>
+    <button type="submit" class="butu" onclick="giftgen()">SUBMIT</button>
+    <a href="index.html"><button class="butu">RESET</button></a>
+    <br>
+    <fieldset class="asd">
+    <div id="output" class="spa"></div></fieldset>
+</body>
+</html>
